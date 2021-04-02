@@ -16,7 +16,7 @@ Os notebooks das aulas podem ser acessadas em:
 - **Aula 2 - Regressão Linear e Logística**:[<img alt="colab" width="45px" src="https://raw.githubusercontent.com/thiagolopes97/ITA/main/colab.png" />](https://colab.research.google.com/drive/1RJ1MupBBQ_hQ-gl96owKQHS13qtRDlZu?usp=sharing) [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula2_RegLin_Log%5BFinal%5D.ipynb)
 
 Os links das videoaulas:
-- **Aula 1:**  [Parte 1](https://drive.google.com/file/d/10JmYuJ1zZQJ-H3F_OgCR3p-eLGFqMvtx/view?usp=sharing) // [Parte 2]()
+- **Aula 1:**  [Parte 1](https://drive.google.com/file/d/10JmYuJ1zZQJ-H3F_OgCR3p-eLGFqMvtx/view?usp=sharing) // [Parte 2](https://drive.google.com/file/d/1F7Rp4tffFqhJeQZMSHM5utLMayXiy13D/view?usp=sharing)
 - **Aula 2:**
 - **Aula 3:**
 - **Aula 4:**
@@ -35,4 +35,6 @@ Medium: [<img alt="daniel.s.amador | medium" width="22px" src="https://cdn.jsdel
 
 Email: thiagogglopes97@gmail.com
 
-**Última atualização:** 10/03/21
+**Criado em:** 10/03/21
+
+**Atualizado em:** 01/04/21
