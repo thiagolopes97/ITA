@@ -17,7 +17,7 @@ Os notebooks das aulas podem ser acessadas em:
 
 Os links das videoaulas:
 - **Aula 1:**  [Parte 1](https://drive.google.com/file/d/10JmYuJ1zZQJ-H3F_OgCR3p-eLGFqMvtx/view?usp=sharing) // [Parte 2](https://drive.google.com/file/d/1F7Rp4tffFqhJeQZMSHM5utLMayXiy13D/view?usp=sharing)
-- **Aula 2:**
+- **Aula 2:** [Link](https://drive.google.com/file/d/17zCz_H3JTEhI3n7XmrCQNxTz4ygxQHUo/view?usp=sharing)
 - **Aula 3:**
 - **Aula 4:**
 - **Aula 5:**
