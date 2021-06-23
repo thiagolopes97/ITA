@@ -13,21 +13,33 @@ Os modelos estudados foram:
 - **Árvores de Decisão**;
 - **Floresta Aleatória**;
 - **Árvores Extremamente Aleatórias**;
+- **Floresta Aleatória**;
+- **Árvores Extremamente Aleatórias**;
+- **K - Nearest Neighbor (KNN)**;
+- **Radius - Nearest Neighbor (RNN)**;
+- **Support Vector Machine (SVM)**;
+- **Redes Neurais Artificiais (RNA)**;
 
 
 Os notebooks das aulas podem ser acessadas em:
-- **Aula 1 - Introdução a Linguagem Python e ao Ambiente Google Colab**:[<img alt="colab" width="30px" src="https://raw.githubusercontent.com/thiagolopes97/ITA/main/colab.png" />](https://colab.research.google.com/drive/1NjQAvK9nd4iExZVsemszRRxj-jekSSE5?usp=sharing) [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula1_IntroPython_Colab%5BFinal%5D.ipynb)
-- **Aula 2 - Regressão Linear e Logística**:[<img alt="colab" width="30px" src="https://raw.githubusercontent.com/thiagolopes97/ITA/main/colab.png" />](https://colab.research.google.com/drive/1RJ1MupBBQ_hQ-gl96owKQHS13qtRDlZu?usp=sharing) [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula2_RegLin_Log%5BFinal%5D.ipynb)
+- **Aula 1 - Introdução a Linguagem Python e ao Ambiente Google Colab**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula1_IntroPython_Colab%5BFinal%5D.ipynb)
+- **Aula 2 - Regressão Linear e Logística**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula2_RegLin_Log%5BFinal%5D.ipynb)
+
+- **Aula 3 - Floresta Aleatória / Floresta Aleatória / Árvores Extremamente Aleatórias**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula3_Arvores%5BFinal%5D.ipynb)
+
+- **Aula 4 - KNN / RNN**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula4-K_R_Vizinhos%5BFinal%5D.ipynb)
+
+- **Aula 5 - SVM**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula5_SVM%5BFinal%5D.ipynb)
+
+- **Aula 6 - RNA**: [<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />](https://github.com/thiagolopes97/ITA/blob/main/CT-600%20Est%C3%A1gio%20Doc%C3%AAncia/Aula6_RNA%5BFinal%5D.ipynb)
 
 Os links das videoaulas:
-- **Aula 1:**  [Parte 1](https://drive.google.com/file/d/10JmYuJ1zZQJ-H3F_OgCR3p-eLGFqMvtx/view?usp=sharing) // [Parte 2](https://drive.google.com/file/d/1F7Rp4tffFqhJeQZMSHM5utLMayXiy13D/view?usp=sharing)
-- **Aula 2:** [Link](https://drive.google.com/file/d/17zCz_H3JTEhI3n7XmrCQNxTz4ygxQHUo/view?usp=sharing)
-- **Aula 3:** [Link]
-- **Aula 4:** [Link]
-- **Aula 5:** [Link]
-- **Aula 6:** [Link]
-- **Aula 7:** [Link]
-- **Aula 8:** [Link]
+- **Aula 1:**  [Parte 1](https://youtu.be/yLP6eXYAlI8) // [Parte 2](https://youtu.be/-M-YipnJlmc)
+- **Aula 2:** [Link](https://youtu.be/JlXqgFKWJjA)
+- **Aula 3:** [Link](https://youtu.be/g87HQJN35EI)
+- **Aula 4:** [Link](https://youtu.be/OEl7fe3MlOo)
+- **Aula 5:** [Link](https://youtu.be/wkDj4GIPmrU)
+- **Aula 6:** [Link](https://youtu.be/Dv4co1sxrM0)
 
 
 
@@ -41,4 +53,4 @@ Email: thiagogglopes97@gmail.com
 
 **Criado em:** 10/03/21
 
-**Atualizado em:** 15/04/21
+**Atualizado em:** 23/06/21
