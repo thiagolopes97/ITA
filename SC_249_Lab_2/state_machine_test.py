@@ -12,7 +12,7 @@ pygame.display.set_caption("Lab 2 - Drone Finite State Machine")
 
 clock = pygame.time.Clock()
 
-behavior = FiniteStateMachine(WayPoint())
+behavior = FiniteStateMachine(PaparazziEight())
 # behavior = RoombaBehaviorTree()
 pose = Pose(PIX2M * SCREEN_WIDTH / 2.0, PIX2M * SCREEN_HEIGHT / 2.0, 0.0)
 roomba = Roomba(pose, 1.0, 2.0, 0.34 / 2.0, behavior)
