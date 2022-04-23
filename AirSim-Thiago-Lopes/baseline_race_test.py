@@ -1,4 +1,5 @@
 from argparse import ArgumentParser
+from pickle import TRUE
 import airsimdroneracinglab as airsim
 import cv2
 import threading
@@ -6,6 +7,14 @@ import time
 import utils
 import numpy as np
 import math
+
+
+#-- Comentários com o sinal de #-- Foram realizados por Sargon e Thiago como parte do entendimento/ explicacao do AirSim\ Comentários somente com # foram os disponibilizados pela Microsoft
+
+
+#-- A estrutura do código para execucao do Racing Lab é dividida em duas partes: Classe BaselineRacer que descreve a simulacao bem como a ténica que o drone utiliza para corrida
+#-- e a outra parte sao as definicoes da execucao dentro de Parser, como ambiente, visualizacao da trajetória, camera auxiliar e outros
+
 
 # drone_name should match the name in ~/Document/AirSim/settings.json
 class BaselineRacer(object):
@@ -22,6 +31,9 @@ class BaselineRacer(object):
         self.viz_traj = viz_traj
         self.viz_traj_color_rgba = viz_traj_color_rgba
 
+
+        #-- Realiza a conexao com o Drone no AirSim
+
         self.airsim_client = airsim.MultirotorClient()
         self.airsim_client.confirmConnection()
         # we need two airsim MultirotorClient objects because the comm lib we use (rpclib) is not thread safe
@@ -32,6 +44,8 @@ class BaselineRacer(object):
         self.airsim_client_odom = airsim.MultirotorClient()
         self.airsim_client_odom.confirmConnection()
         self.level_name = None
+
+        
 
         self.image_callback_thread = threading.Thread(
             target=self.repeat_timer_image_callback, args=(self.image_callback, 0.03)
@@ -47,6 +61,7 @@ class BaselineRacer(object):
             10  # see https://github.com/microsoft/AirSim-Drone-Racing-Lab/issues/38
         )
 
+    #-- Realiza o carregamento da ambiente no AirSim e da pista de corrida
     # loads desired level
     def load_level(self, level_name, sleep_sec=2.0):
         self.level_name = level_name
@@ -54,14 +69,17 @@ class BaselineRacer(object):
         self.airsim_client.confirmConnection()  # failsafe
         time.sleep(sleep_sec)  # let the environment load completely
 
+    #-- Inicia a corrida
     # Starts an instance of a race in your given level, if valid
     def start_race(self, tier=3):
         self.airsim_client.simStartRace(tier)
 
+    #-- Encerra a corrida
     # Resets a current race: moves players to start positions, timer and penalties reset
     def reset_race(self):
         self.airsim_client.simResetRace()
 
+    #-- Habilita o controle do drone via API
     # arms drone, enable APIs, set default traj tracker gains
     def initialize_drone(self):
         self.airsim_client.enableApiControl(vehicle_name=self.drone_name)
@@ -89,6 +107,7 @@ class BaselineRacer(object):
             traj_tracker_gains, vehicle_name=self.drone_name
         )
         time.sleep(0.2)
+
 
     def takeoffAsync(self):
         self.airsim_client.takeoffAsync().join()
@@ -230,8 +249,8 @@ class BaselineRacer(object):
             acc_max = 15.0
 
         if self.level_name == "Building99_Hard":
-            vel_max = 4.0
-            acc_max = 1.0
+            vel_max = 2.0
+            acc_max = 0.3
 
         return self.airsim_client.moveOnSplineAsync(
             [gate_pose.position for gate_pose in self.gate_poses_ground_truth],
@@ -412,6 +431,8 @@ def main(args):
 
 
 if __name__ == "__main__":
+    
+    #-- Setagem dos parametos de simulacao e comportamento do drone
     parser = ArgumentParser()
     parser.add_argument(
         "--level_name",
@@ -428,7 +449,7 @@ if __name__ == "__main__":
             "Final_Tier_2",
             "Final_Tier_3",
         ],
-        default="Final_Tier_1",
+        default="Soccer_Field_Medium",
     )
     parser.add_argument(
         "--planning_baseline_type",
@@ -443,13 +464,13 @@ if __name__ == "__main__":
         default="moveOnSpline",
     )
     parser.add_argument(
-        "--enable_viz_traj", dest="viz_traj", action="store_true", default=True
+        "--enable_viz_traj", dest="viz_traj", action="store_true", default=False
     )
     parser.add_argument(
         "--enable_viz_image_cv2",
         dest="viz_image_cv2",
         action="store_true",
-        default=False,
+        default=True,
     )
     parser.add_argument("--race_tier", type=int, choices=[1, 2, 3], default=1)
     args = parser.parse_args()
